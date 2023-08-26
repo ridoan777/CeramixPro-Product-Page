@@ -1,0 +1,27 @@
+#heroArea #heroSlider #carouselExampleCaptions 
+.carousel-indicators button{
+  transform: translateY(50px);
+  position: relative;
+}
+
+#heroArea #heroSlider #carouselExampleCaptions 
+.heroSliderIndicatorText{
+  transform: translate(11rem, 68vh);
+  position: relative;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item
+img{
+  height: 25rem !important;
+}
+
+#carouselExampleCaptions .carousel-control-prev 
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  width: 3rem !important;
+  height: 3rem !important;
+  transform: scale(0.5);
+  border-radius: 50%;
+  color: white !important;
+  background-color: lime;
+}

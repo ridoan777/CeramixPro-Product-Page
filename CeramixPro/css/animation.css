@@ -1,0 +1,51 @@
+#heroContentOrder .btn:hover,
+#productArea .productItem .btn:hover {
+    color: white;
+    background-color: darkgreen;
+}
+
+#reviewArea #reviewCardPane .reviewCard:hover {
+    box-shadow: 1px 1px 20px 1px gray;
+}
+
+#reviewArea #reviewCardPane .reviewCard img:hover {
+    box-shadow: 2px 2px 20px 2px black;
+}
+
+#productArea .productItem img:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 20px 2px black;
+    border-radius: 25px;
+}
+
+#faqArea .faqQuestion .faqQuestionItem:hover {
+    background-color: tomato;
+}
+
+#faqArea .faqQuestion .faqQuestionItem a:hover {
+    font-weight: bold;
+    position: relative;
+}
+
+#footer .footerUpper .footerUpperCommonChild a:hover {
+    color: cyan;
+}
+/********************/
+#footer .footerUpper .footerUpperCommonChild p{
+    animation: footerImgBorderAnimation 3s infinite;
+}
+
+@keyframes footerImgBorderAnimation {
+    0% {
+      color: limegreen;
+    }
+    33% {
+      color: cyan;
+    }
+    66% {
+      color: violet;
+    }
+    100% {
+      color: peachpuff;
+    }
+  }

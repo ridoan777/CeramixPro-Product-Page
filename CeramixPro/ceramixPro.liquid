@@ -1,0 +1,1156 @@
+<div class="wrapper">
+    <!-- -------wrapper starts--------- -->
+    <header
+        id="topHeader"
+        class="container-fluid col-md-12 bg-black d-flex justify-content-center align-items-center fixed-top"
+    >
+        <a href="{{ section.settings.link1 }}">{{ section.settings.link1text }}</a>
+    </header>
+    <!-- -topHeader ends-- -->
+
+    <section id="heroArea" class="container col-md-12 d-flex justify-content-center align-items-center">
+        <div id="heroSlider" class="container col-md-5">
+            <div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel">
+                <div class="carousel-indicators">
+                    <button
+                        data-mdb-target="#carouselExampleCaptions"
+                        data-mdb-slide-to="0"
+                        class="active btn btn-primary rounded-circle mt-5"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                        style="background-color: {{ section.settings.button1Backgroundcolor }}; height: {{ section.settings.button1Height }}; width: {{ section.settings.button1Width }}; border: 0px !important;"
+                    >
+                        {{ section.settings.button1 }}
+                    </button>
+                    <button
+                        data-mdb-target="#carouselExampleCaptions"
+                        data-mdb-slide-to="1"
+                        class="btn btn-primary rounded-circle mt-5"
+                        aria-label="Slide 2"
+                        style="background-color: {{ section.settings.button2Backgroundcolor }}; height: {{ section.settings.button2Height }}; width: {{ section.settings.button2Width }}; border: 0px !important;"
+                    >
+                        {{ section.settings.button2 }}
+                    </button>
+                    <button
+                        data-mdb-target="#carouselExampleCaptions"
+                        data-mdb-slide-to="2"
+                        class="btn btn-primary rounded-circle mt-5"
+                        aria-label="Slide 3"
+                        style="background-color: {{ section.settings.button3Backgroundcolor }}; height: {{ section.settings.button3Height }}; width: {{ section.settings.button3Width }}; border: 0px !important;"
+                    >
+                        {{ section.settings.button3 }}
+                    </button>
+                </div>
+                <div class="heroSliderIndicatorText">Sample For More!</div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        {% if section.settings.image2 != blank -%}
+                            {{- section.settings.image2 | image_url:  | image_tag: class: 'd-block w-100', loading: 'lazy' -}}
+                        {%- endif %}
+                    </div>
+                    <div class="carousel-item">
+                        {% if section.settings.image3 != blank -%}
+                            {{- section.settings.image3 | image_url:  | image_tag: class: 'd-block w-100', loading: 'lazy' -}}
+                        {%- endif %}
+                    </div>
+                    <div class="carousel-item">
+                        {% if section.settings.image4 != blank -%}
+                            {{- section.settings.image4 | image_url:  | image_tag: class: 'd-block w-100', loading: 'lazy' -}}
+                        {%- endif %}
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-mdb-target="#carouselExampleCaptions"
+                    data-mdb-slide="prev"
+                >
+                    {{ section.settings.button4 }}
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-mdb-target="#carouselExampleCaptions"
+                    data-mdb-slide="next"
+                >
+                    {{ section.settings.button5 }}
+                </button>
+            </div>
+        </div>
+
+        <div id="heroContent" class="col-md-6">
+            <div id="heroContentTitle">
+                <p>{{ section.settings.richtext1 }}</p>
+                <span style="color: {{ section.settings.richtext2parent_Fontcolor }}; font-family: impact;">
+                    <h4>{{ section.settings.heading1 }}</h4>
+                    <h2>{{ section.settings.heading2 }}</h2>
+                    <h1 style="color: {{ section.settings.heading3Fontcolor }};">{{ section.settings.heading3 }}</h1>
+                    <p style="font-family: 'Oswald'; font-size: {{ section.settings.richtext2Fontsize }}; font-style: italic; font-weight: {{ section.settings.richtext2Weight }};">
+                        {{ section.settings.richtext2 }}
+                    </p>
+                </span>
+            </div>
+            <!--  -->
+            <div id="heroContentBody">
+                <div class="heroBodyLeftItems heroBodyCommonItems">
+                    <div class="heroCommonItemsImageWrap d-flex align-items-center">
+                        {% if section.settings.image5 != blank -%}
+                            {{- section.settings.image5 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+                        {%- endif %}
+                        <p>{{ section.settings.richtext3 }}</p>
+                    </div>
+                    <div class="heroCommonItemsImageWrap d-flex align-items-center">
+                        {% if section.settings.image6 != blank -%}
+                            {{- section.settings.image6 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+                        {%- endif %}
+                        <p>{{ section.settings.richtext4 }}</p>
+                    </div>
+                    <div class="heroCommonItemsImageWrap d-flex align-items-center">
+                        {% if section.settings.image7 != blank -%}
+                            {{- section.settings.image7 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+                        {%- endif %}
+                        <p>{{ section.settings.richtext5 }}</p>
+                    </div>
+                    <div class="heroCommonItemsImageWrap d-flex align-items-center">
+                        {% if section.settings.image8 != blank -%}
+                            {{- section.settings.image8 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+                        {%- endif %}
+                        <p>{{ section.settings.richtext6 }}</p>
+                    </div>
+                    <div class="heroCommonItemsImageWrap d-flex align-items-center">
+                        {% if section.settings.image9 != blank -%}
+                            {{- section.settings.image9 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+                        {%- endif %}
+                        <p>{{ section.settings.richtext7 }}</p>
+                    </div>
+                </div>
+                <!-- -- -->
+                <div class="heroBodyRightItems heroBodyCommonItems">
+                    <div class="heroCommonItemsImageWrap d-flex align-items-center">
+                        {% if section.settings.image10 != blank -%}
+                            {{- section.settings.image10 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+                        {%- endif %}
+                        <p>{{ section.settings.richtext8 }}</p>
+                    </div>
+                    <div class="heroCommonItemsImageWrap d-flex align-items-center">
+                        {% if section.settings.image11 != blank -%}
+                            {{- section.settings.image11 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+                        {%- endif %}
+                        <p>{{ section.settings.richtext9 }}</p>
+                    </div>
+                    <div class="heroCommonItemsImageWrap d-flex align-items-center">
+                        {% if section.settings.image12 != blank -%}
+                            {{- section.settings.image12 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+                        {%- endif %}
+                        <p>{{ section.settings.richtext10 }}</p>
+                    </div>
+                    <div class="heroCommonItemsImageWrap d-flex align-items-center">
+                        {% if section.settings.image13 != blank -%}
+                            {{- section.settings.image13 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+                        {%- endif %}
+                        <p>{{ section.settings.richtext11 }}</p>
+                    </div>
+                </div>
+            </div>
+            <!-- - -->
+            <div id="heroContentOrder" class="d-flex flex-column align-items-center">
+                <p>{{ section.settings.richtext12 }}</p>
+                <div class="btn btn-rounded">ORDER NOW!</div>
+                <p>{{ section.settings.richtext13 }}</p>
+            </div>
+        </div>
+    </section>
+    <!-- -heroArea ends-- -->
+    <section id="productArea" class="container col-md-12 d-flex justify-content-between">
+        <div class="productItem">
+            {% if section.settings.image14 != blank -%}
+                {{- section.settings.image14 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+            {%- endif %}
+            <h2 class="productPrice">{{ section.settings.heading4 }}</h2>
+            <div class="btn btn-rounded">ORDER NOW!</div>
+        </div>
+        <!--  -->
+        <div class="productItem">
+            {% if section.settings.image15 != blank -%}
+                {{- section.settings.image15 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+            {%- endif %}
+            <h2 class="productPrice">{{ section.settings.heading5 }}</h2>
+            <div class="btn btn-rounded">ORDER NOW!</div>
+        </div>
+        <!--  -->
+        <div class="productItem">
+            {% if section.settings.image16 != blank -%}
+                {{- section.settings.image16 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+            {%- endif %}
+            <h2 class="productPrice">{{ section.settings.heading6 }}</h2>
+            <div class="btn btn-rounded">ORDER NOW!</div>
+        </div>
+        <!--  -->
+    </section>
+    <!-- -productArea ends-- -->
+    <section id="mottoArea" class="container-fluid col-md-12 col-sm-12">
+        <h4 style="margin: {{ section.settings.heading7Margin }};">{{ section.settings.heading7 }}</h4>
+        <div class="mottoSection col-sm-12 d-flex justify-content-around align-items-baseline row">
+            <div class="mottoSectionItem col-md-3 col-sm-12">
+                {% if section.settings.image17 != blank -%}
+                    {{- section.settings.image17 | image_url:  | image_tag: class: 'w-50', loading: 'lazy' -}}
+                {%- endif %}
+                <h4>{{ section.settings.heading8 }}</h4>
+                <p>{{ section.settings.richtext14 }}</p>
+            </div>
+            <div class="mottoSectionItem col-md-3 col-sm-12">
+                {% if section.settings.image18 != blank -%}
+                    {{- section.settings.image18 | image_url:  | image_tag: class: 'w-50', loading: 'lazy' -}}
+                {%- endif %}
+                <h4>{{ section.settings.heading9 }}</h4>
+                <p>{{ section.settings.richtext15 }}</p>
+            </div>
+            <div class="mottoSectionItem col-md-3 col-sm-12">
+                {% if section.settings.image19 != blank -%}
+                    {{- section.settings.image19 | image_url:  | image_tag: class: 'w-50', loading: 'lazy' -}}
+                {%- endif %}
+                <h4>{{ section.settings.heading10 }}</h4>
+                <p>{{ section.settings.richtext16 }}</p>
+            </div>
+        </div>
+    </section>
+    <!-- -mottoArea ends-- -->
+
+    <section id="reviewArea" class="container-fluid d-flex flex-column align-items-center border col-md-12">
+        <div id="reviewHeader" class="col-md-12 text-center">
+            <h4>{{ section.settings.heading11 }}</h4>
+            <p>{{ section.settings.richtext17 }}</p>
+        </div>
+        <!-- -- -->
+        <div id="reviewCardPane" class="col-md-12">
+            <div class="reviewCard border col-md-3">
+                {% if section.settings.image20 != blank -%}
+                    {{- section.settings.image20 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+                {%- endif %}
+                <div class="reviewCardTitle d-flex justify-content-between">
+                    <span>
+                        <h6>{{ section.settings.heading12 }}</h6>
+                        <p style="font-weight: {{ section.settings.richtext18Weight }};">
+                            {{ section.settings.richtext18 }}
+                        </p>
+                    </span>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </div>
+                <div class="reviewCardDetails" style="height: {{ section.settings.richtext19parent_Height }};">
+                    <p>{{ section.settings.richtext19 }}</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="reviewCard border col-md-3">
+                {% if section.settings.image21 != blank -%}
+                    {{- section.settings.image21 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+                {%- endif %}
+                <div class="reviewCardTitle d-flex justify-content-between">
+                    <span>
+                        <h6>{{ section.settings.heading13 }}</h6>
+                        <p style="font-weight: {{ section.settings.richtext20Weight }};">
+                            {{ section.settings.richtext20 }}
+                        </p>
+                    </span>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </div>
+                <div class="reviewCardDetails" style="height: {{ section.settings.richtext21parent_Height }};">
+                    <p>{{ section.settings.richtext21 }}</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="reviewCard border col-md-3">
+                {% if section.settings.image22 != blank -%}
+                    {{- section.settings.image22 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+                {%- endif %}
+                <div class="reviewCardTitle d-flex justify-content-between">
+                    <span>
+                        <h6>{{ section.settings.heading14 }}</h6>
+                        <p style="font-weight: {{ section.settings.richtext22Weight }};">
+                            {{ section.settings.richtext22 }}
+                        </p>
+                    </span>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </div>
+                <div class="reviewCardDetails" style="height: {{ section.settings.richtext23parent_Height }};">
+                    <p>{{ section.settings.richtext23 }}</p>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </section>
+    <!-- -reviewArea ends-- -->
+
+    <section id="faqArea" class="container col-md-12 d-flex flex-column align-items-center">
+        <h4>{{ section.settings.heading15 }}</h4>
+        <div class="faqQuestion container col-md-12">
+            <div class="faqQuestionItem">
+                <a href="{{ section.settings.link2 }}">{{ section.settings.link2text }}</a>
+            </div>
+            <!--  -->
+            <div class="faqQuestionItem">
+                <a href="{{ section.settings.link3 }}">{{ section.settings.link3text }}</a>
+            </div>
+            <!--  -->
+            <div class="faqQuestionItem">
+                <a href="{{ section.settings.link4 }}">{{ section.settings.link4text }}</a>
+            </div>
+            <!--  -->
+            <div class="faqQuestionItem">
+                <a href="{{ section.settings.link5 }}">{{ section.settings.link5text }}</a>
+            </div>
+            <!--  -->
+            <div class="faqQuestionItem">
+                <a href="{{ section.settings.link6 }}">{{ section.settings.link6text }}</a>
+            </div>
+            <!--  -->
+        </div>
+    </section>
+    <footer id="footer" class="container-fluid col-md-12 ">
+        <div class="footerUpper d-flex justify-content-around">
+            <div class="footerImage col-md-3 d-block d-flex align-items-center justify-content-center footerUpperCommonChild">
+                {% if section.settings.image23 != blank -%}
+                    {{- section.settings.image23 | image_url:  | image_tag: class: 'd-block w-75', loading: 'lazy' -}}
+                {%- endif %}
+            </div>
+            <!--  -->
+            <div class="footertextLeft col-md-2 footerUpperCommonChild">
+                <p>{{ section.settings.richtext24 }}</p>
+                <a href="{{ section.settings.link7 }}">{{ section.settings.link7text }}</a>
+                <a href="{{ section.settings.link8 }}">{{ section.settings.link8text }}</a>
+                <a href="{{ section.settings.link9 }}">{{ section.settings.link9text }}</a>
+                <a href="{{ section.settings.link10 }}">{{ section.settings.link10text }}</a>
+            </div>
+
+            <div class="footertextMiddle col-md-2 footerUpperCommonChild">
+                <p>{{ section.settings.richtext25 }}</p>
+                <a href="{{ section.settings.link11 }}">{{ section.settings.link11text }}</a>
+                <a href="{{ section.settings.link12 }}">{{ section.settings.link12text }}</a>
+                <a href="{{ section.settings.link13 }}">{{ section.settings.link13text }}</a>
+            </div>
+
+            <div class="footertextRight col-md-3 footerUpperCommonChild">
+                <p>{{ section.settings.richtext26 }}</p>
+                <a href="{{ section.settings.link14 }}">{{ section.settings.link14text }}</a>
+            </div>
+        </div>
+        <!--  -->
+        <div class="footerLower text-white text-center">
+            <p style="margin: {{ section.settings.richtext27Margin }}; font-size: {{ section.settings.richtext27Fontsize }};">
+                {{ section.settings.richtext27 }}
+            </p>
+        </div>
+    </footer>
+    <!-- -------wrapper ends--------- -->
+</div>
+<!-- ------MAIN JS------ -->
+<script src="./js/main.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+
+{% schema %}
+{
+    "name": "ceramixPro",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image1",
+            "label": "Image 1"
+        },
+        {
+            "type": "text",
+            "id": "image1height",
+            "label": "Image 1 height",
+            "default": "56px"
+        },
+        {
+            "type": "image_picker",
+            "id": "image2",
+            "label": "Image 2"
+        },
+        {
+            "type": "image_picker",
+            "id": "image3",
+            "label": "Image 3"
+        },
+        {
+            "type": "image_picker",
+            "id": "image4",
+            "label": "Image 4"
+        },
+        {
+            "type": "image_picker",
+            "id": "image5",
+            "label": "Image 5"
+        },
+        {
+            "type": "image_picker",
+            "id": "image6",
+            "label": "Image 6"
+        },
+        {
+            "type": "image_picker",
+            "id": "image7",
+            "label": "Image 7"
+        },
+        {
+            "type": "image_picker",
+            "id": "image8",
+            "label": "Image 8"
+        },
+        {
+            "type": "image_picker",
+            "id": "image9",
+            "label": "Image 9"
+        },
+        {
+            "type": "image_picker",
+            "id": "image10",
+            "label": "Image 10"
+        },
+        {
+            "type": "image_picker",
+            "id": "image11",
+            "label": "Image 11"
+        },
+        {
+            "type": "image_picker",
+            "id": "image12",
+            "label": "Image 12"
+        },
+        {
+            "type": "image_picker",
+            "id": "image13",
+            "label": "Image 13"
+        },
+        {
+            "type": "image_picker",
+            "id": "image14",
+            "label": "Image 14"
+        },
+        {
+            "type": "image_picker",
+            "id": "image15",
+            "label": "Image 15"
+        },
+        {
+            "type": "image_picker",
+            "id": "image16",
+            "label": "Image 16"
+        },
+        {
+            "type": "image_picker",
+            "id": "image17",
+            "label": "Image 17"
+        },
+        {
+            "type": "image_picker",
+            "id": "image18",
+            "label": "Image 18"
+        },
+        {
+            "type": "image_picker",
+            "id": "image19",
+            "label": "Image 19"
+        },
+        {
+            "type": "image_picker",
+            "id": "image20",
+            "label": "Image 20"
+        },
+        {
+            "type": "image_picker",
+            "id": "image21",
+            "label": "Image 21"
+        },
+        {
+            "type": "image_picker",
+            "id": "image22",
+            "label": "Image 22"
+        },
+        {
+            "type": "image_picker",
+            "id": "image23",
+            "label": "Image 23"
+        },
+        {
+            "type": "text",
+            "id": "heading1",
+            "label": "Heading 1",
+            "default": "CeramixPro"
+        },
+        {
+            "type": "color",
+            "id": "heading1parent_Fontcolor",
+            "label": "Heading 1 Font color",
+            "default": "black"
+        },
+        {
+            "type": "text",
+            "id": "heading2",
+            "label": "Heading 2",
+            "default": "CERAMIC COATING SPRAY(250mL Bottle)"
+        },
+        {
+            "type": "color",
+            "id": "heading2parent_Fontcolor",
+            "label": "Heading 2 Font color",
+            "default": "{{ section.settings.heading1parent_Fontcolor }}"
+        },
+        {
+            "type": "text",
+            "id": "heading3",
+            "label": "Heading 3",
+            "default": "$24.95"
+        },
+        {
+            "type": "color",
+            "id": "heading3Fontcolor",
+            "label": "Heading 3 Font color",
+            "default": "limegreen"
+        },
+        {
+            "type": "color",
+            "id": "heading3parent_Fontcolor",
+            "label": "Heading 3 Font color",
+            "default": "{{ section.settings.heading2parent_Fontcolor }}"
+        },
+        {
+            "type": "text",
+            "id": "heading4",
+            "label": "Heading 4",
+            "default": "$24.95"
+        },
+        {
+            "type": "text",
+            "id": "heading5",
+            "label": "Heading 5",
+            "default": "$45.40  $49.00"
+        },
+        {
+            "type": "text",
+            "id": "heading6",
+            "label": "Heading 6",
+            "default": "$70.35  $74.85"
+        },
+        {
+            "type": "text",
+            "id": "heading7",
+            "label": "Heading 7",
+            "default": "Benefits of CreamixPro"
+        },
+        {
+            "type": "text",
+            "id": "heading7Margin",
+            "label": "Heading 7 Margin",
+            "default": "0 0 2rem 0 !important"
+        },
+        {
+            "type": "text",
+            "id": "heading8",
+            "label": "Heading 8",
+            "default": "High Gloss"
+        },
+        {
+            "type": "text",
+            "id": "heading9",
+            "label": "Heading 9",
+            "default": "Unparalleled Vehicle Protection"
+        },
+        {
+            "type": "text",
+            "id": "heading10",
+            "label": "Heading 10",
+            "default": "Augmented Shine"
+        },
+        {
+            "type": "text",
+            "id": "heading11",
+            "label": "Heading 11",
+            "default": "Here's What People Say About CeramixPro"
+        },
+        {
+            "type": "text",
+            "id": "heading12",
+            "label": "Heading 12",
+            "default": "Devid Beckman"
+        },
+        {
+            "type": "text",
+            "id": "heading13",
+            "label": "Heading 13",
+            "default": "Chris Nolan"
+        },
+        {
+            "type": "text",
+            "id": "heading14",
+            "label": "Heading 14",
+            "default": "Roger Federer"
+        },
+        {
+            "type": "text",
+            "id": "heading15",
+            "label": "Heading 15",
+            "default": "Frequently Asked Questions"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext1",
+            "label": "Richtext 1",
+            "default": "<p>2375 Reviews</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext2",
+            "label": "Richtext 2",
+            "default": "<p>Features</p>"
+        },
+        {
+            "type": "text",
+            "id": "richtext2Fontsize",
+            "label": "Richtext 2 Font size",
+            "default": "24px"
+        },
+        {
+            "type": "select",
+            "id": "richtext2Weight",
+            "label": "Richtext 2 Weight",
+            "options": [
+                {
+                    "value": "normal",
+                    "label": "Normal"
+                },
+                {
+                    "value": "bold",
+                    "label": "Bold"
+                },
+                {
+                    "value": "bolder",
+                    "label": "Bolder"
+                },
+                {
+                    "value": "lighter",
+                    "label": "Lighter"
+                }
+            ],
+            "default": "bold"
+        },
+        {
+            "type": "color",
+            "id": "richtext2parent_Fontcolor",
+            "label": "Richtext 2 Font color",
+            "default": "{{ section.settings.heading3parent_Fontcolor }}"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext3",
+            "label": "Richtext 3",
+            "default": "<p>Ultimate Premium Lasting Spray</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext4",
+            "label": "Richtext 4",
+            "default": "<p>Hydrophobic Brilliance</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext5",
+            "label": "Richtext 5",
+            "default": "<p>Smooth-Surface Cleaner</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext6",
+            "label": "Richtext 6",
+            "default": "<p>Easy DIY Application</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext7",
+            "label": "Richtext 7",
+            "default": "<p>Long Lasting Performance</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext8",
+            "label": "Richtext 8",
+            "default": "<p>UV Devised Techhnology</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext9",
+            "label": "Richtext 9",
+            "default": "<p>Smooth On Glass Furnish</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext10",
+            "label": "Richtext 10",
+            "default": "<p>Eco-Friendly Substance</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext11",
+            "label": "Richtext 11",
+            "default": "<p>Phosensitive Grade Strike at Homes</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext12",
+            "label": "Richtext 12",
+            "default": "<p>BOD MADE BOTTLES & SAP MIX</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext13",
+            "label": "Richtext 13",
+            "default": "<p>Lorem ipsum dolor sit amet consectetur.</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext14",
+            "label": "Richtext 14",
+            "default": "<p>\"CeramixPro's high gloss feature is a testament to Swiss excellence in automotive care. Our advanced formula infuses a radiant, mirror-like shine onto your vehicle, enhancing its appeal and protection. Elevate your car's aesthetics with unmatched brilliance.\"</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext15",
+            "label": "Richtext 15",
+            "default": "<p>Experience unparalleled vehicle protection with CeramixPro. Our advanced formula creates a durable ceramic shield, guarding your vehicle against the elements, UV rays, scratches, and contaminants. Drive with confidence and shine on!</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext16",
+            "label": "Richtext 16",
+            "default": "<p>\"Experience the future of car care with CeramixPro's Augmented Shine. Advanced technology combines with precision detailing to amplify your vehicle's brilliance, creating an unrivaled head-turning finish.\"</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext17",
+            "label": "Richtext 17",
+            "default": "<p>Unleash Brilliance: CeramixPro - Elevate Your Car's Shine!.</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext18",
+            "label": "Richtext 18",
+            "default": "<p>Miami, Florida</p>"
+        },
+        {
+            "type": "select",
+            "id": "richtext18Weight",
+            "label": "Richtext 18 Weight",
+            "options": [
+                {
+                    "value": "normal",
+                    "label": "Normal"
+                },
+                {
+                    "value": "bold",
+                    "label": "Bold"
+                },
+                {
+                    "value": "bolder",
+                    "label": "Bolder"
+                },
+                {
+                    "value": "lighter",
+                    "label": "Lighter"
+                }
+            ],
+            "default": "lighter"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext19",
+            "label": "Richtext 19",
+            "default": "<p>\"Absolutely chuffed with the car spray job! The finish is proper top-notch – not a blemish in sight. The old girl looks brand new again. Big cheers to the lads at the garage!\"</p>"
+        },
+        {
+            "type": "text",
+            "id": "richtext19parent_Height",
+            "label": "Richtext 19 Height",
+            "default": "40%"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext20",
+            "label": "Richtext 20",
+            "default": "<p>Charlotte, NC</p>"
+        },
+        {
+            "type": "select",
+            "id": "richtext20Weight",
+            "label": "Richtext 20 Weight",
+            "options": [
+                {
+                    "value": "normal",
+                    "label": "Normal"
+                },
+                {
+                    "value": "bold",
+                    "label": "Bold"
+                },
+                {
+                    "value": "bolder",
+                    "label": "Bolder"
+                },
+                {
+                    "value": "lighter",
+                    "label": "Lighter"
+                }
+            ],
+            "default": "lighter"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext21",
+            "label": "Richtext 21",
+            "default": "<p>\"Used this car spray to cover minor scratches. Impressed with the easy application and how it seamlessly blended, restoring my car's shine. Highly recommended!\"</p>"
+        },
+        {
+            "type": "text",
+            "id": "richtext21parent_Height",
+            "label": "Richtext 21 Height",
+            "default": "40%"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext22",
+            "label": "Richtext 22",
+            "default": "<p>Little Rock, Arkansas</p>"
+        },
+        {
+            "type": "select",
+            "id": "richtext22Weight",
+            "label": "Richtext 22 Weight",
+            "options": [
+                {
+                    "value": "normal",
+                    "label": "Normal"
+                },
+                {
+                    "value": "bold",
+                    "label": "Bold"
+                },
+                {
+                    "value": "bolder",
+                    "label": "Bolder"
+                },
+                {
+                    "value": "lighter",
+                    "label": "Lighter"
+                }
+            ],
+            "default": "lighter"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext23",
+            "label": "Richtext 23",
+            "default": "<p>\"CeramixPro car spray delivers exceptional results! Its advanced formula ensures a stunning, long-lasting shine, while its Swiss precision technology provides superior protection. A must-have for every car enthusiast.\"</p>"
+        },
+        {
+            "type": "text",
+            "id": "richtext23parent_Height",
+            "label": "Richtext 23 Height",
+            "default": "40%"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext24",
+            "label": "Richtext 24",
+            "default": "<p>INFO</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext25",
+            "label": "Richtext 25",
+            "default": "<p>ORDER</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext26",
+            "label": "Richtext 26",
+            "default": "<p>CUSTOMER SERVICES</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext27",
+            "label": "Richtext 27",
+            "default": "<p>* 2023 CreamixPro All right reserved</p>"
+        },
+        {
+            "type": "text",
+            "id": "richtext27Margin",
+            "label": "Richtext 27 Margin",
+            "default": "0 !important"
+        },
+        {
+            "type": "text",
+            "id": "richtext27Fontsize",
+            "label": "Richtext 27 Font size",
+            "default": "12px"
+        },
+        {
+            "type": "url",
+            "id": "link1",
+            "label": "Link 1"
+        },
+        {
+            "type": "text",
+            "id": "link1text",
+            "label": "Link 1 text",
+            "default": "{% if section.settings.image1 != blank %}{{ section.settings.image1 | image_url: height: section.settings.image1height | image_tag: class: '', loading: 'lazy' }}{% endif %}"
+        },
+        {
+            "type": "url",
+            "id": "link2",
+            "label": "Link 2"
+        },
+        {
+            "type": "text",
+            "id": "link2text",
+            "label": "Link 2 text",
+            "default": "What is CeramixPro?"
+        },
+        {
+            "type": "url",
+            "id": "link3",
+            "label": "Link 3"
+        },
+        {
+            "type": "text",
+            "id": "link3text",
+            "label": "Link 3 text",
+            "default": "How does CeramixPro coating spray work?"
+        },
+        {
+            "type": "url",
+            "id": "link4",
+            "label": "Link 4"
+        },
+        {
+            "type": "text",
+            "id": "link4text",
+            "label": "Link 4 text",
+            "default": "How to use the CeramixPro coating spray?"
+        },
+        {
+            "type": "url",
+            "id": "link5",
+            "label": "Link 5"
+        },
+        {
+            "type": "text",
+            "id": "link5text",
+            "label": "Link 5 text",
+            "default": "What are the advantages of CeramixPro caoting spray?"
+        },
+        {
+            "type": "url",
+            "id": "link6",
+            "label": "Link 6"
+        },
+        {
+            "type": "text",
+            "id": "link6text",
+            "label": "Link 6 text",
+            "default": "What's the best time to use CeramixPro coating spray?"
+        },
+        {
+            "type": "url",
+            "id": "link7",
+            "label": "Link 7"
+        },
+        {
+            "type": "text",
+            "id": "link7text",
+            "label": "Link 7 text",
+            "default": "Terms of Service"
+        },
+        {
+            "type": "url",
+            "id": "link8",
+            "label": "Link 8"
+        },
+        {
+            "type": "text",
+            "id": "link8text",
+            "label": "Link 8 text",
+            "default": "Privacy Policy"
+        },
+        {
+            "type": "url",
+            "id": "link9",
+            "label": "Link 9"
+        },
+        {
+            "type": "text",
+            "id": "link9text",
+            "label": "Link 9 text",
+            "default": "Shopping Policy"
+        },
+        {
+            "type": "url",
+            "id": "link10",
+            "label": "Link 10"
+        },
+        {
+            "type": "text",
+            "id": "link10text",
+            "label": "Link 10 text",
+            "default": "Resource Policy"
+        },
+        {
+            "type": "url",
+            "id": "link11",
+            "label": "Link 11"
+        },
+        {
+            "type": "text",
+            "id": "link11text",
+            "label": "Link 11 text",
+            "default": "Track My Order"
+        },
+        {
+            "type": "url",
+            "id": "link12",
+            "label": "Link 12"
+        },
+        {
+            "type": "text",
+            "id": "link12text",
+            "label": "Link 12 text",
+            "default": "FAQ"
+        },
+        {
+            "type": "url",
+            "id": "link13",
+            "label": "Link 13"
+        },
+        {
+            "type": "text",
+            "id": "link13text",
+            "label": "Link 13 text",
+            "default": "Contact Us"
+        },
+        {
+            "type": "url",
+            "id": "link14",
+            "label": "Link 14"
+        },
+        {
+            "type": "text",
+            "id": "link14text",
+            "label": "Link 14 text",
+            "default": "Send us an email"
+        },
+        {
+            "type": "text",
+            "id": "button1",
+            "label": "Button 1"
+        },
+        {
+            "type": "color",
+            "id": "button1Backgroundcolor",
+            "label": "Button 1 Background color",
+            "default": "lawngreen !important"
+        },
+        {
+            "type": "text",
+            "id": "button1Height",
+            "label": "Button 1 Height",
+            "default": "10px"
+        },
+        {
+            "type": "text",
+            "id": "button1Width",
+            "label": "Button 1 Width",
+            "default": "10px"
+        },
+        {
+            "type": "text",
+            "id": "button2",
+            "label": "Button 2"
+        },
+        {
+            "type": "color",
+            "id": "button2Backgroundcolor",
+            "label": "Button 2 Background color",
+            "default": "lawngreen !important"
+        },
+        {
+            "type": "text",
+            "id": "button2Height",
+            "label": "Button 2 Height",
+            "default": "10px"
+        },
+        {
+            "type": "text",
+            "id": "button2Width",
+            "label": "Button 2 Width",
+            "default": "10px"
+        },
+        {
+            "type": "text",
+            "id": "button3",
+            "label": "Button 3"
+        },
+        {
+            "type": "color",
+            "id": "button3Backgroundcolor",
+            "label": "Button 3 Background color",
+            "default": "lawngreen !important"
+        },
+        {
+            "type": "text",
+            "id": "button3Height",
+            "label": "Button 3 Height",
+            "default": "10px"
+        },
+        {
+            "type": "text",
+            "id": "button3Width",
+            "label": "Button 3 Width",
+            "default": "10px"
+        },
+        {
+            "type": "text",
+            "id": "button4",
+            "label": "Button 4",
+            "default": "Previous"
+        },
+        {
+            "type": "text",
+            "id": "button5",
+            "label": "Button 5",
+            "default": "Next"
+        }
+    ],
+    "presets": [
+        {
+            "name": "ceramixPro"
+        }
+    ]
+}
+{% endschema %}
